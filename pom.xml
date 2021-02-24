@@ -15,13 +15,18 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <distributionManagement>
-    <repository>
-      <id>internal.repo</id>
-      <name>Internal Repo</name>
-      <url>file:///var/lib/jenkins/charles</url>
-    </repository>
-   </distributionManagement>
+<distributionManagement>
+<repository>
+    <id>releases</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://54.174.141.118:8081/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://54.174.141.118:8081/repository/maven-snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
   
 </project>
  
